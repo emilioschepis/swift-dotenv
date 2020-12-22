@@ -4,6 +4,11 @@ import PackageDescription
 
 let package = Package(
     name: "Dotenv",
+    products: [
+        .library(
+            name: "Dotenv",
+            targets: ["Dotenv"]),
+    ],
     dependencies: [],
     targets: [
         .target(
